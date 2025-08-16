@@ -39,7 +39,6 @@ jobs:
       - name: Install musl tools
         run: |
           sudo apt update -y
-          sudo apt upgrade -y
           sudo apt install -y musl-tools
 
       - name: Build
