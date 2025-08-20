@@ -12,6 +12,6 @@ FROM debian:stable-slim
 
 WORKDIR /app
 
-COPY --from=builder /app/target/release/rf-proxy .
+COPY --from=builder /app/target/x86_64-unknown-linux-musl/release/rf-proxy .
 
 CMD ["./rf-proxy"]
