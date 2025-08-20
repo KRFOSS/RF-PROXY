@@ -10,7 +10,7 @@ RUN cargo build --release --target x86_64-unknown-linux-musl
 
 FROM debian:stable-slim
 
-RUN apt update -y && apt install ca-certificates
+RUN apt update -y && apt install -y ca-certificates
 
 WORKDIR /app
 
