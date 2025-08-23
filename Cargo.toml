@@ -9,21 +9,21 @@ async-trait = "0.1"
 bytes = "1"
 chrono = { version = "0.4", features = ["serde", "clock"] }
 hex = "0.4"
-hyper = { version = "0.14", features = ["full"] }
-hyper-tls = "0.5"
-http = "0.2"
-reqwest = { version = "0.11", features = ["json", "gzip", "brotli", "deflate", "stream"] }
+hyper = { version = "1", features = ["full"] }
+hyper-tls = "0"
+http = "1"
+reqwest = { version = "0", features = ["json", "gzip", "brotli", "deflate", "stream"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sha2 = "0.10"
-thiserror = "1"
+thiserror = "2"
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "fs", "io-util", "sync", "time"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
 dotenvy = "0.15"
 httpdate = "1"
 rand = "0.9.2"
-tokio-cron-scheduler = "0.13"
+tokio-cron-scheduler = "0"
 openssl = { version = "0.10.73", features = ["vendored"] }
 
 [dev-dependencies]
